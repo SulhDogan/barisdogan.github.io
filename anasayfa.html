@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #TumSayfaAlani {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            min-height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            transform: scale(0.99, 0.97);
+            background-color: green;
+        }
+        
+        #baris {
+            width: 30%;
+            height: 45px;
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #555;
+            border-radius: 10px;
+        }
+        
+        #GenelSinirlayici {
+            width: 1300px;
+            color: white;
+            margin-top: 25px;
+        }
+        
+        #Header {
+            width: 100%;
+            height: 45px;
+            margin-bottom: 10px;
+        }
+        
+        #HeaderMenuAlani {
+            width: 100%;
+            height: 50px;
+            float: right;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        #HeaderMenuAlani {
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        #AnaAlan {
+            margin-top: 10px;
+            width: 100%;
+            height: 1450px;
+            background-color: #333;
+        }
+        
+        #Slider {
+            width: 100%;
+            max-height: 423px;
+        }
+        
+        #AnaMenuSagAlan {
+            width: 50%;
+            height: 423px;
+            float: right;
+        }
+        
+        h1 {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #AEBBBB;
+        }
+        
+        #AnaMenuSagYaziAlani {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BBB;
+        }
+        
+        #AnaMenuSolVideoAlani {
+            margin-top: 10px;
+            width: 50%;
+            height: 423px;
+            float: left;
+        }
+        
+        #video {
+            width: 315px;
+            height: 255px;
+            padding-top: 52px;
+        }
+        
+        #Footer {
+            background-color: #555;
+            width: 100%;
+            height: 175px;
+        }
+        
+        #FooterUstDiv {
+            width: 100%;
+            height: 25px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        
+        #FooterMenuAlani {
+            width: 100%;
+            height: 25px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .FooterMenuSecenekleri {
+            list-style-type: none;
+            float: left;
+            margin-right: 5px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        
+        .Kaydirma {
+            padding-left: 492px;
+        }
+        
+        #FooterAltDiv {
+            width: 100%;
+            height: 25px;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #AltCizgi {
+            text-decoration: underline;
+        }
+        
+        #FooterResimAlani {
+            width: 100%;
+            height: 42px;
+            padding-top: 10px;
+        }
+        
+        .Resimler {
+            width: 45px;
+            height: 45px;
+            padding-right: 20px;
+        }
+        
+        .footerlink:link {
+            color: white;
+            text-decoration: none;
+        }
+        /* visited link */
+        
+        .footerlink:visited {
+            color: white;
+            text-decoration: none;
+        }
+        /* mouse over link */
+        
+        .footerlink:hover {
+            color: white;
+            text-decoration: none;
+        }
+        /* selected link */
+        
+        .footerlink:active {
+            color: green;
+            text-decoration: none;
+        }
+        
+        .menulink:link {
+            color: white;
+            text-decoration: none;
+        }
+        /* visited link */
+        
+        .menulink:visited {
+            color: white;
+            text-decoration: none;
+        }
+        /* mouse over link */
+        
+        .menulink:hover {
+            color: white;
+            text-decoration: none;
+        }
+        /* selected link */
+        
+        .menulink:active {
+            color: white;
+            text-decoration: none;
+        }
+        /*  menu deneme  https://www.yazilimkodlama.com/web/css-acilir-menu-ornegi/ */
+        
+        .menu {
+            width: 100%;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            float: left;
+            width: 325px;
+        }
+        
+        .menu ul li ul {
+            display: none;
+        }
+		.menu ul li ul li{
+		float:none;
+		}
+        
+        .menu ul li:hover ul {
+            display: block;
+            position: absolute;
+			
+        }
+        
+        .menu ul li a {
+            text-decoration: none;
+            background: #333;
+            display: block;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+            border-bottom: 2px solid red;
+            border-left: 1px solid #595959;
+            padding: 5px;	
+        }
+        
+        .menu ul li ul li a {
+            background: #595959;
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #333;
+            font-size: .8em;
+        }
+        
+        .menu li a:hover {
+            background: rgb(248, 140, 0);
+            transition: .5s;
+        }
+        
+        .menu ul li ul li a:hover {
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color:green;">
+
+    <div id="TumSayfaAlani">
+        <center>
+            <div id="baris"> BARIŞ DOĞAN Kişisel Web Sitesi </div>
+
+            <div id="GenelSinirlayici">
+                <div id="Header">
+                    <div class="menu">
+                        <div class="HeaderMenuAlani">
+                            <ul>
+                                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                                <li><a href="hakkımda.html">Hakkımda</a>
+                                </li>
+                                <li><a href="çalışmalarım.html">Çalışmalarım</a>
+                                    <ul>
+                                        <li><a href="#">Console</a></li>
+                                        <li><a href="#">Windows</a></li>
+                                        <li><a href="#">WPF</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div id="AnaAlan">
+                    <div id="Slider">
+
+                        <img class="mySlides" src="resim1.jpg" style="width:100%;height:423px">
+                        <img class="mySlides" src="resim2.jpg" style="width:100%;height:423px">
+                        <img class="mySlides" src="resim3.jpg" style="width:100%;height:423px">
+
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none"; ///* w3schooldan alınmıştır. */
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {
+                                    myIndex = 1
+                                }
+                                x[myIndex - 1].style.display = "block";
+                                setTimeout(carousel, 2000); // Change image every 2 seconds
+                            }
+                        </script>
+
+                    </div>
+                    <div class="duyurular" style="width: 100%;text-align: center;">
+                        <h3>HABERLER</h3>
+                    </div>
+                    <div class="haber1" style="width: 100%;margin-bottom: 50px;">
+                        <div id="AnaMenuSagAlan">
+                            <div id="haber" style="width: 100%;">
+                                <h1>Ulaştırma ve Altyapı Bakanlığı 3, Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK) 52 personel alacak.</h1>
+                                <div id="AnaMenuSagYaziAlani">
+                                    Resmi Gazete'de yayımlanan ilanlara göre, Bakanlık, taşra teşkilatına 3 sürekli işçi alacak. İşçilerden 2'sinin engelli, birinin de eski hükümlü veya terörle mücadelede malul sayılmayacak şekilde yaralanmış olması şartı aranacak. İşe alım şartlarını içeren
+                                    ilan, 16-20 Aralık tarihlerinde Türkiye İş Kurumu, mülga Devlet Personel Başkanlığı ve Bakanlığın internet sitesinden yayımlanacak. Adaylar, bugünden itibaren Türkiye İş Kurumuna müracaat edebilecek. TÜBİTAK da İdari
+                                    Hizmetler Daire Başkanlığına 2 uzman yardımcısı alacak. Savunma Sanayii Araştırma ve Geliştirme Enstitüsü (SAGE) bünyesinde görev yapmak üzere 1 teknik ve destek personeli (mühendis), 3 Ar-Ge teknisyeni ve 29 usta alımı
+                                    yapılacak. Kurum, Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi bünyesinde çalıştırmak için de 2 şoför, 4 memur, 9 teknisyen ve 2 koruma memuru alacak. İdari Hizmetler Daire Başkanlığı ve SAGE için
+                                    başvurular https://kariyer.sage.tubitak.gov.tr, Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi için yapılacak müracaatlar da https://esube.iskur.gov.tr adresinden gerçekleştirilebilecek.
+                                </div>
+                            </div>
+                        </div>
+                        <div id="AnaMenuSolVideoAlani">
+                            <div id="haberresim" style="width: 100%;margin-bottom: 20px;"><img width="95%" height="423px" align="left" src="haber.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="duyurular" style="width: 100%;text-align: center;float: left;">
+                        <h3>DUYURULAR</h3>
+                    </div>
+                    <div class="haber2" style="width: 100%;margin-bottom: 50px;">
+                        <div id="AnaMenuSagAlan">
+                            <div id="haber" style="width: 100%;">
+                                <h1>Ulaştırma ve Altyapı Bakanlığı 3, Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (TÜBİTAK) 52 personel alacak.</h1>
+                                <div id="AnaMenuSagYaziAlani">
+                                    Resmi Gazete'de yayımlanan ilanlara göre, Bakanlık, taşra teşkilatına 3 sürekli işçi alacak. İşçilerden 2'sinin engelli, birinin de eski hükümlü veya terörle mücadelede malul sayılmayacak şekilde yaralanmış olması şartı aranacak. İşe alım şartlarını içeren
+                                    ilan, 16-20 Aralık tarihlerinde Türkiye İş Kurumu, mülga Devlet Personel Başkanlığı ve Bakanlığın internet sitesinden yayımlanacak. Adaylar, bugünden itibaren Türkiye İş Kurumuna müracaat edebilecek. TÜBİTAK da İdari
+                                    Hizmetler Daire Başkanlığına 2 uzman yardımcısı alacak. Savunma Sanayii Araştırma ve Geliştirme Enstitüsü (SAGE) bünyesinde görev yapmak üzere 1 teknik ve destek personeli (mühendis), 3 Ar-Ge teknisyeni ve 29 usta alımı
+                                    yapılacak. Kurum, Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi bünyesinde çalıştırmak için de 2 şoför, 4 memur, 9 teknisyen ve 2 koruma memuru alacak. İdari Hizmetler Daire Başkanlığı ve SAGE için
+                                    başvurular https://kariyer.sage.tubitak.gov.tr, Bilişim ve Bilgi Güvenliği İleri Teknolojiler Araştırma Merkezi için yapılacak müracaatlar da https://esube.iskur.gov.tr adresinden gerçekleştirilebilecek.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="AnaMenuSolVideoAlani">
+                            <div id="haberresim" style="width: 100%;margin-bottom: 20px;"><img width="95%" height="423px" align="left" src="haber.jpg" />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div id="Footer">
+                    <div id="FooterUstDiv">
+                        <center>
+                            <ul id="FooterMenuAlani">
+                                <a class="footerlink" href="anasayfa.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri Kaydirma">Anasayfa<span> |</span></li>
+                                </a>
+                                <a class="footerlink" href="hakkımda.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri">Hakkımda<span> |</span></li>
+                                </a>
+                                <a class="footerlink" href="çalışmalarım.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri">Çalışmalarım<span> |</span></li>
+                                </a>
+                                <a class="footerlink" href="iletisim.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri">İletişim</li>
+                                </a>
+                            </ul>
+                        </center>
+                    </div>
+
+
+                    <div id="FooterAltDiv">
+                        <div>Mail : sulhdogan@gmail.com</div>
+                        <div>Telefon : 05368326274</div>
+                        <div>ESKİŞEHİR</div>
+                        <div>© 2019 Tüm hakları saklıdır.<span>| </span><a class="footerlink" href="https://github.com/SulhDogan"><span id="AltCizgi">https://github.com/SulhDogan</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>

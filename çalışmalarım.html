@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #TumSayfaAlani {
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            transform: scale(0.99, 0.97);
+            background-color: green;
+        }
+        
+        #baris {
+            width: 30%;
+            height: 45px;
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #555;
+            border-radius: 10px;
+        }
+        
+        #GenelSinirlayici {
+            width: 1300px;
+            color: white;
+            margin-top: 25px;
+        }
+        
+        #Header {
+            width: 100%;
+            height: 45px;
+            margin-bottom: 10px;
+        }
+        
+        #SolYazi {
+            width: 30%;
+            height: 45px;
+            float: left;
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            text-align: left;
+            padding-left: 10px;
+            line-height: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #SagAlan {
+            width: 60%;
+            height: 50px;
+            float: right;
+            color: white;
+            text-align: left;
+            line-height: 50px;
+        }
+        
+        #HeaderMenuAlani {
+            width: 100%;
+            height: 50px;
+            float: right;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        #HeaderMenuAlani {
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        
+        .HeaderMenuSecenekleri {
+            list-style-type: none;
+            float: left;
+            margin-right: 44px;
+            text-align: center;
+        }
+        
+        #AnaAlan {
+            width: 100%;
+            height: 423px;
+            background-color: #333;
+        }
+        
+        #AnaMenuSagAlan {
+            width: 50%;
+            height: 423px;
+            float: right;
+        }
+        
+        h1 {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #AEBBBB;
+        }
+        
+        #AnaMenuSagYaziAlani {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BBB;
+        }
+        
+        #AnaMenuSolVideoAlani {
+            width: 50%;
+            height: 423px;
+            float: left;
+        }
+        
+        #video {
+            width: 315px;
+            height: 255px;
+            padding-top: 52px;
+        }
+        
+        #Footer {
+            background-color: #555;
+            width: 100%;
+            height: 175px;
+        }
+        
+        #FooterUstDiv {
+            width: 100%;
+            height: 25px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        
+        #FooterMenuAlani {
+            width: 100%;
+            height: 25px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .FooterMenuSecenekleri {
+            list-style-type: none;
+            float: left;
+            margin-right: 5px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+        
+        .Kaydirma {
+            padding-left: 492px;
+        }
+        
+        #FooterAltDiv {
+            width: 100%;
+            height: 25px;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #AltCizgi {
+            text-decoration: underline;
+        }
+        
+        #FooterResimAlani {
+            width: 100%;
+            height: 42px;
+            padding-top: 10px;
+        }
+        
+        .Resimler {
+            width: 45px;
+            height: 45px;
+            padding-right: 20px;
+        }
+        
+        .footerlink:link {
+            color: white;
+            text-decoration: none;
+        }
+        /* visited link */
+        
+        .footerlink:visited {
+            color: white;
+            text-decoration: none;
+        }
+        /* mouse over link */
+        
+        .footerlink:hover {
+            color: white;
+            text-decoration: none;
+        }
+        /* selected link */
+        
+        .footerlink:active {
+            color: green;
+            text-decoration: none;
+        }
+        
+        .menulink:link {
+            color: white;
+            text-decoration: none;
+        }
+        /* visited link */
+        
+        .menulink:visited {
+            color: white;
+            text-decoration: none;
+        }
+        /* mouse over link */
+        
+        .menulink:hover {
+            color: white;
+            text-decoration: none;
+        }
+        /* selected link */
+        
+        .menulink:active {
+            color: white;
+            text-decoration: none;
+        }
+        /*  menu deneme*/
+        
+        .menu {
+            width: 100%;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            float: left;
+            width: 325px;
+        }
+        
+        .menu ul li ul {
+            display: none;
+        }
+        
+        .menu ul li:hover ul {
+            display: block;
+        }
+        
+        .menu ul li a {
+            text-decoration: none;
+            background: #333;
+            display: block;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-align: center;
+            border-bottom: 2px solid red;
+            border-left: 1px solid #595959;
+            padding: 5px;
+        }
+        
+        .menu ul li ul li a {
+            background: #595959;
+            text-align: left;
+            padding: 5px;
+            border-bottom: 1px solid #333;
+            font-size: .8em;
+        }
+        
+        .menu li a:hover {
+            background: rgb(248, 140, 0);
+            transition: .5s;
+        }
+        
+        .menu ul li ul li a:hover {
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color:green;">
+
+    <div id="TumSayfaAlani">
+        <center>
+            <div id="baris"> BARIŞ DOĞAN Kişisel Web Sitesi </div>
+            <div id="GenelSinirlayici">
+                <div id="Header">
+                    <div class="menu">
+                        <div class="HeaderMenuAlani">
+                            <ul>
+                                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                                <li><a href="hakkımda.html">Hakkımda</a>
+                                </li>
+                                <li><a href="çalışmalarım.html">Çalışmalarım</a>
+                                    <ul>
+                                        <li><a href="#">Console</a></li>
+                                        <li><a href="#">Windows</a></li>
+                                        <li><a href="#">WPF</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div id="AnaAlan">
+                    <div id="AnaMenuSagAlan">
+                        <h1>HOŞGELDİNİZ</h1>
+                        <div id="AnaMenuSagYaziAlani">
+                            Merhabalar çalıştığım projeleri github hesabımdan inceleyebilirsiniz.
+                        </div>
+                    </div>
+                    <div id="AnaMenuSolVideoAlani">
+                        <video type="video/mp4" controls id="video">
+							<source type="video/mp4" src="agac.mp4">
+						</video>
+                    </div>
+                </div>
+
+
+                <div id="Footer">
+                    <div id="FooterUstDiv">
+                        <ul id="FooterMenuAlani">
+                            <a class="footerlink" href="anasayfa.html" target="_blank">
+                                <li class="FooterMenuSecenekleri Kaydirma">Anasayfa<span> |</span></li>
+                            </a>
+                            <a class="footerlink" href="hakkımda.html" target="_blank">
+                                <li class="FooterMenuSecenekleri">Hakkımda<span> |</span></li>
+                            </a>
+                            <a class="footerlink" href="çalışmalarım.html" target="_blank">
+                                <li class="FooterMenuSecenekleri">Çalışmalarım<span> |</span></li>
+                            </a>
+                            <a class="footerlink" href="iletisim.html" target="_blank">
+                                <li class="FooterMenuSecenekleri">İletişim</li>
+                            </a>
+                        </ul>
+                    </div>
+
+
+                    <div id="FooterAltDiv">
+                        <div>Mail : sulhdogan@gmail.com</div>
+                        <div>Telefon : 05368326274</div>
+                        <div>ESKİŞEHİR</div>
+                        <div>© 2019 Tüm hakları saklıdır.<span>| </span><a class="footerlink" href="https://github.com/SulhDogan"><span id="AltCizgi">https://github.com/SulhDogan</span></a></div>
+
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+
+</body>
+
+</html>
