@@ -20,7 +20,7 @@
         
         #baris {
             width: 30%;
-            height: 45px;
+            height: 5%;
             font-size: 35px;
             font-weight: 600;
             color: white;
@@ -248,8 +248,13 @@
             display: none;
         }
         
+        .menu ul li ul li {
+            float: none;
+        }
+        
         .menu ul li:hover ul {
             display: block;
+            position: absolute;
         }
         
         .menu ul li a {
@@ -315,12 +320,12 @@
 
 
                 <div id="AnaAlan">
-                    <div id="formdiv">
-                        <form>
-                            <div style="padding: 10px;"><input type="text" placeholder="İsminizi Giriniz" style="width: 500px;height: 30px;"></div>
-                            <div style="padding: 10px;"><input type="text" placeholder="Soy İsminizi Giriniz" style="width: 500px;height: 30px;"></div>
-                            <div style="padding: 10px;"><input type="email" placeholder="E-postanızı Giriniz" style="width: 500px;height: 30px;"></div>
-                            <div style="padding: 10px;"><textarea name="email" id="email" placeholder="Mesajınızı Yazınız" rows="3" style="width: 500px;height: 60px;"></textarea></div>
+                    <div id="formdiv" style="margin-top: auto;">
+                        <form action="https://formspree.io/xyykzydp" method="POST" target="_blank">
+                            <div style="padding: 10px;"><input type="text" name="name" placeholder="İsminizi Giriniz" style="width: 500px;height: 30px;"></div>
+                            <div style="padding: 10px;"><input type="text" name="surname" placeholder="Soy İsminizi Giriniz" style="width: 500px;height: 30px;"></div>
+                            <div style="padding: 10px;"><input type="email" name="email" placeholder="E-postanızı Giriniz" style="width: 500px;height: 30px;"></div>
+                            <div style="padding: 10px;"><textarea name="message" id="mesaj" placeholder="Mesajınızı Yazınız" rows="3" style="width: 500px;height: 60px;"></textarea></div>
                             <div style="padding: 10px;"><input type="submit" value="Gönder" style="width: 500px;height: 30px;"></div>
                         </form>
                     </div>
