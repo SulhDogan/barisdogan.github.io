@@ -6,8 +6,9 @@
     <style>
         #TumSayfaAlani {
             width: 100%;
-            min-height: 100%;
+            height: 100%;
             position: absolute;
+            min-height: 100%;
             top: 0;
             left: 0;
             right: 0;
@@ -34,7 +35,7 @@
         }
         
         #GenelSinirlayici {
-            width: 1300px;
+            width: 70%;
             color: white;
             margin-top: 25px;
         }
@@ -43,28 +44,6 @@
             width: 100%;
             height: 45px;
             margin-bottom: 10px;
-        }
-        
-        #SolYazi {
-            width: 30%;
-            height: 45px;
-            float: left;
-            font-size: 35px;
-            font-weight: 600;
-            color: white;
-            text-align: left;
-            padding-left: 10px;
-            line-height: 45px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #SagAlan {
-            width: 60%;
-            height: 50px;
-            float: right;
-            color: white;
-            text-align: left;
-            line-height: 50px;
         }
         
         #HeaderMenuAlani {
@@ -81,29 +60,21 @@
             float: right;
         }
         
-        .HeaderMenuSecenekleri {
-            list-style-type: none;
-            float: left;
-            margin-right: 44px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
         #AnaAlan {
+            margin-top: 10px;
             width: 100%;
             height: 423px;
             background-color: #333;
         }
         
-        #formdiv {
+        #Slider {
             width: 100%;
-            height: 100%;
-            padding: 10px;
+            max-height: 423px;
         }
         
         #AnaMenuSagAlan {
             width: 50%;
-            height: 423px;
+            height: 60%;
             float: right;
         }
         
@@ -120,8 +91,9 @@
         }
         
         #AnaMenuSolVideoAlani {
+            margin-top: 10px;
             width: 50%;
-            height: 423px;
+            height: 60%;
             float: left;
         }
         
@@ -137,7 +109,7 @@
             height: 175px;
         }
         
-        #FooterUstriv {
+        #FooterUstDiv {
             width: 100%;
             height: 25px;
             padding-top: 40px;
@@ -158,14 +130,14 @@
             margin-right: 5px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            text-decoration: underline;
+            text-decoration: none;
         }
         
         .Kaydirma {
-            padding-left: 492px;
+            padding-left: 38%;
         }
         
-        #FooterAltriv {
+        #FooterAltDiv {
             width: 100%;
             height: 25px;
             padding-top: 10px;
@@ -175,6 +147,7 @@
         #AltCizgi {
             text-decoration: underline;
         }
+        
         
         .Resimler {
             width: 45px;
@@ -227,7 +200,7 @@
             color: white;
             text-decoration: none;
         }
-        /*  menu deneme*/
+        /*  menu deneme */
         
         .menu {
             width: 100%;
@@ -239,9 +212,9 @@
             padding: 0;
         }
         
-        .menu li {
+        .menu ul li {
             float: left;
-            width: 325px;
+            width: 25%;
         }
         
         .menu ul li ul {
@@ -250,6 +223,7 @@
         
         .menu ul li ul li {
             float: none;
+            width: 328px;
         }
         
         .menu ul li:hover ul {
@@ -285,6 +259,12 @@
         
         .menu ul li ul li a:hover {
             padding-left: 15px;
+        }
+		
+		#formdiv {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
         }
     </style>
 </head>
@@ -334,30 +314,31 @@
 
 
                 <div id="Footer">
-                    <div id="FooterUstriv">
-                        <ul id="FooterMenuAlani">
-                            <a class="footerlink" href="index.html" target="_blank">
-                                <li class="FooterMenuSecenekleri Kaydirma">Anasayfa<span> |</span></li>
-                            </a>
-                            <a class="footerlink" href="hakkımda.html" target="_blank">
-                                <li class="FooterMenuSecenekleri">Hakkımda<span> |</span></li>
-                            </a>
-                            <a class="footerlink" href="çalışmalarım.html" target="_blank">
-                                <li class="FooterMenuSecenekleri">Çalışmalarım<span> |</span></li>
-                            </a>
-                            <a class="footerlink" href="iletisim.html" target="_blank">
-                                <li class="FooterMenuSecenekleri">İletişim</li>
-                            </a>
-                        </ul>
+                    <div id="FooterUstDiv">
+                        <center>
+                            <ul id="FooterMenuAlani">
+                                <a class="footerlink" href="index.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri Kaydirma">Anasayfa<span> |</span></li>
+                                </a>
+                                <a class="footerlink" href="hakkımda.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri">Hakkımda<span> |</span></li>
+                                </a>
+                                <a class="footerlink" href="çalışmalarım.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri">Çalışmalarım<span> |</span></li>
+                                </a>
+                                <a class="footerlink" href="iletisim.html" target="_blank">
+                                    <li class="FooterMenuSecenekleri">İletişim</li>
+                                </a>
+                            </ul>
+                        </center>
                     </div>
 
 
-                    <div id="FooterAltriv">
+                    <div id="FooterAltDiv">
                         <div>Mail : sulhdogan@gmail.com</div>
                         <div>Telefon : 05368326274</div>
                         <div>ESKİŞEHİR</div>
                         <div>© 2019 Tüm hakları saklıdır.<span>| </span><a class="footerlink" href="https://github.com/SulhDogan"><span id="AltCizgi">https://github.com/SulhDogan</span></a></div>
-
                     </div>
                 </div>
             </div>

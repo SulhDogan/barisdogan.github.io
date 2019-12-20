@@ -6,8 +6,9 @@
     <style>
         #TumSayfaAlani {
             width: 100%;
-            min-height: 100%;
+            height: 100%;
             position: absolute;
+            min-height: 100%;
             top: 0;
             left: 0;
             right: 0;
@@ -34,7 +35,7 @@
         }
         
         #GenelSinirlayici {
-            width: 1300px;
+            width: 70%;
             color: white;
             margin-top: 25px;
         }
@@ -43,28 +44,6 @@
             width: 100%;
             height: 45px;
             margin-bottom: 10px;
-        }
-        
-        #SolYazi {
-            width: 30%;
-            height: 45px;
-            float: left;
-            font-size: 35px;
-            font-weight: 600;
-            color: white;
-            text-align: left;
-            padding-left: 10px;
-            line-height: 45px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #SagAlan {
-            width: 60%;
-            height: 50px;
-            float: right;
-            color: white;
-            text-align: left;
-            line-height: 50px;
         }
         
         #HeaderMenuAlani {
@@ -81,23 +60,21 @@
             float: right;
         }
         
-        .HeaderMenuSecenekleri {
-            list-style-type: none;
-            float: left;
-            margin-right: 44px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
+        #AnaAlan {
+            margin-top: 10px;
+            width: 100%;
+            height: 750px;
+            background-color: #333;
         }
         
-        #AnaAlan {
+        #Slider {
             width: 100%;
-            height: 423px;
-            background-color: #333;
+            max-height: 423px;
         }
         
         #AnaMenuSagAlan {
             width: 50%;
-            height: 423px;
+            height: 60%;
             float: right;
         }
         
@@ -113,9 +90,10 @@
             color: #BBB;
         }
         
-        #AnaMenuSolResimAlani {
+        #AnaMenuSolVideoAlani {
+            margin-top: 10px;
             width: 50%;
-            height: 423px;
+            height: 60%;
             float: left;
         }
         
@@ -152,11 +130,11 @@
             margin-right: 5px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-            text-decoration: underline;
+            text-decoration: none;
         }
         
         .Kaydirma {
-            padding-left: 492px;
+            padding-left: 38%;
         }
         
         #FooterAltDiv {
@@ -170,21 +148,11 @@
             text-decoration: underline;
         }
         
-        #FooterResimAlani {
-            width: 100%;
-            height: 42px;
-            padding-top: 10px;
-        }
         
         .Resimler {
             width: 45px;
             height: 45px;
             padding-right: 20px;
-        }
-        
-        #a href {
-            text-decoration: none;
-            color: white;
         }
         
         .footerlink:link {
@@ -232,7 +200,7 @@
             color: white;
             text-decoration: none;
         }
-        /*  menu deneme*/
+        /*  menu deneme */
         
         .menu {
             width: 100%;
@@ -244,9 +212,9 @@
             padding: 0;
         }
         
-        .menu li {
+        .menu ul li {
             float: left;
-            width: 325px;
+            width: 25%;
         }
         
         .menu ul li ul {
@@ -255,6 +223,7 @@
         
         .menu ul li ul li {
             float: none;
+            width: 328px;
         }
         
         .menu ul li:hover ul {
@@ -291,6 +260,12 @@
         .menu ul li ul li a:hover {
             padding-left: 15px;
         }
+		
+		#formdiv {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -325,15 +300,9 @@
 
 
                 <div id="AnaAlan">
-                    <div id="AnaMenuSagAlan">
-                        <h1>HOŞGELDİNİZ</h1>
-                        <div id="AnaMenuSagYaziAlani">
-                            Merhabalar ismim Barış Kocaeli Üniversitesi bilişim sistemleri mühendisliği 3.sınıf öğrencisiyim.Bana iletişim bölümünden ulaşabilirsiniz.
-                        </div>
-                    </div>
-                    <div id="AnaMenuSolResimAlani">
-                        <img src="Flaggest.jpg" width="95%" height="423px" align="left" />
-                    </div>
+                    <div style="width:100%">
+					        <iframe src="cv.pdf" width="100%" height="750px"></iframe>
+					</div>
                 </div>
 
 
